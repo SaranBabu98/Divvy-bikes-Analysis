@@ -241,7 +241,7 @@ all_trips_v2 %>%
 # STEP 5: EXPORT SUMMARY FILE FOR FURTHER ANALYSIS
 #=================================================
 
-# Create a csv file that we will visualize in Excel, Tableau, or my presentation software
+# Create a csv file that we will visualize in Tableau
 
 counts <- aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week, FUN = mean)
 
